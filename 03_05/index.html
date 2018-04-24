@@ -20,18 +20,53 @@
 
   <div class="container" id="services">
     <div class="row" style="background: lightgray">
-      <section class="col">
+      <section class="col-sm-4 offset-sm-2">
         <img src="images/image.png" alt="sample image">
         <h4>Exotic Pets</h4>
         <p>We offer <strong>specialized</strong> care for <em>reptiles, rodents, birds,</em> and other exotic pets.</p>
       </section>
-      <section class="col">
+      <section class="col-sm-4">
         <img src="images/image.png" alt="sample image">
         <h4>Grooming</h4>
         <p>Our therapeutic <span class="font-weight-bold">grooming</span> treatments help battle fleas, allergic dermatitis, and other challenging skin conditions.</p>
       </section>
     </div><!-- row -->
 </div><!-- container -->
+
+<style media="screen">
+@keyframes bgcolor {
+  0% {
+      background-color: #45a3e5
+  }
+
+  20% {
+      background-color: #66bf39
+  }
+
+  40% {
+      background-color: #eb670f
+  }
+
+  60% {
+      background-color: #f35
+  }
+
+  80% {
+      background-color: #864cbf
+  }
+
+  100% {
+      background-color: #45a3e5
+  }
+}
+
+section.col-sm-4 {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+</style>
 
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
